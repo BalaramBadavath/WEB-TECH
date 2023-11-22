@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: "header aside sec1 sec1 sec2 main1"
+            "header main2 sec1 sec1 sec3 main1"
+            "footer1 footer1 footer1 footer2 footer2 footer2";
+            grid-gap: 20px 10px;
+        }
+        header{
+            background-color: palevioletred;
+            grid-area: header;
+        }
+        aside{
+            background-color: palevioletred;
+            grid-area: aside;
+        }
+        .sec1{
+            background-color: blue;
+            grid-area: sec1;
+        }
+        .sec2{
+            background-color: blue;
+            grid-area: sec2;
+        }
+        .sec3{
+            background-color: blue;
+            grid-area: sec3;
+        }
+        .main1{
+            background-color: palevioletred;
+            grid-area: main1;
+        }
+        .main2{
+            background-color: blue;
+            grid-area: main2;
+        }
+        .footer1{
+            background-color: blue;
+            grid-area: footer1;
+        }
+        .footer2{
+            background-color: blue;
+            grid-area: footer2;
+        }
+        .common{
+            font-size: 25px;
+            padding: 65px 70px;
+            text-align:left;
+            color: white;
+                }
+    </style>
+</head>
+<body>
+    <header  class="common ">Problem</header>
+    <aside   class="common ">Solution</aside>
+    <section class="common sec1">Unique selling proposition</section>
+    <section class="common sec2">Unfair Advantage</section>
+    <section class="common sec3">Channels</section>
+    <main    class="common main1">Customer segment</main>
+    <main    class="common main2">Key metrics</main>
+    <footer  class="common footer1">Cost structure</footer>
+    <footer  class="common footer2">Revenge Stream</footer>
+</body>
+</html>

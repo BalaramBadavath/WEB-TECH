@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td>STUDENT NAME</td>
+                <td>:</td>
+                <td><input type="text" pattern="[a-zA-Z]{3,15}"
+                    title="Enter 3-15 Characters" required></td>
+                <td>MOTHER NAME</td>
+                <td>:</td>
+                <td><input type="text" pattern="[a-zA-Z]{3,15}"
+                    title="Enter 3-15 Characters" required></td>
+            </tr>
+            <tr>
+                <td>FATHER NAME</td>
+                <td>:</td>
+                <td><input type="text" pattern="[a-zA-Z]{3,15}"
+                    title="Enter 3-15 Characters" required></td>
+                <td>MOBILE NO</td>
+                <td>:</td>
+                <td><input type="text" pattern="[6-9]{1}[\d]{9}"></td>
+            </tr>
+            <tr>
+                <td>E-Mail</td>
+                <td>:</td>
+                <td><input type="text" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                     required></td>
+                <td>PASSWORD</td>
+                <td>:</td>
+                <td><input type="text" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><center><input type="submit"></center></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

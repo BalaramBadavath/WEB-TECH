@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .main{
+            width: 100%;
+            height: fit-content;
+            background-color:white;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+        } 
+        img{
+            height: 50px;
+            width: 50px;
+        }
+        a{
+            color: brown;
+            text-decoration: none;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            font-weight:bolder;
+        }
+        .main ul li{
+            list-style-type: none;
+            display: inline;
+            margin-right: 60px;
+        }
+        .coll{
+            display: none;
+
+        }
+        main.coll{
+            width: 1000px;
+            height: 400px;
+            background-color: aqua;
+            display:flex;
+            justify-content: end;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="data:image/jpeg;base64,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" alt="">
+        <ul>
+            <li><a href="">MEN</a>
+                <div class="coll">
+                    <div class="fir di">
+                        <ul>
+                            <li class="h"> Top wear </li>
+                            <li> T-Shirts </li>
+                            <li> Casual Shirts </li>
+                            <li> Formal Shirts </li>
+                            <li> Sweat Shirts </li>
+                            <li> Sweaters </li>
+                            <li> Jackets </li>
+                            <li> Blazers & Coats </li>
+                            <li> Suits </li>
+                            <li> Rain Jackets </li>
+                            <li><hr></li>
+                            <li></li>
+                            <li class="h">  Indian & Festive Wear </li>
+                            <li>  Kurtas & Kurta sets </li>
+                            <li> Sherwanis </li>
+            
+                        </ul>
+                    </div>
+                    <div class="sec di">
+                        <ul>
+                            <li class="h"> Bottom Wear </li>
+                            <li> Jeans </li>
+                            <li> Casual Trousers </li>
+                            <li> Formal Trousers </li>
+                            <li> Shorts </li>
+                            <li> Track pants & joggers </li>
+                            <li></li>
+                            <li class="h"> Innerwear & Sleepwear </li>
+                            <li> Briefs & Trunks </li>
+                            <li> Boxers </li>
+                            <li> vests </li>
+                            <li> Sleepwear & Loungewear </li>
+                            <li> Thermals </li>
+                        </ul>
+                    </div>
+                    <div class="thi di">
+                            <ul>
+                                <li class="h"> Footwear</li>
+                                <li>Casual Shoes</li>
+                                <li>Sports Shoes</li>
+                                <li>Formal Shoes</li>
+                                <li>Sneakers</li>
+                                <li>Sandals & Floaters</li>
+                                <li> Flip Flops</li>
+                                <li> Socks</li>
+                                <li><hr></li>
+                                <li></li>
+                                <li class="h">Personal Care & Grooming</li>
+                                <li></li>
+                                <li class="h">Sunglasses & Frames</li>
+                                <li></li>
+                                <li class="h">Watches</li>
+                            </ul>
+                    </div>
+                    <div class="fou di">
+                        <ul>
+                            <li class="h">Sports & Active Wear</li>
+                            <li>Sports Shoes</li>
+                            <li>Sports Sandals</li>
+                            <li>Active T-Shirts</li>
+                            <li>Track Pants & Shorts</li>
+                            <li>Tracksuits</li>
+                            <li>Jackets & Sweatshirts</li>
+                            <li>Sports Accessories</li>
+                            <li>Swimwear</li>
+                            <li><hr></li>
+                            <li class="h">Gadjets</li>
+                            <li>Smart Wearbles</li>
+                            <li>Fitness Gadjets</li>
+                            <li>Headphones</li>
+                        </ul>
+                    </div>
+                    <div class="fiv di">
+                        <ul>
+                            <li class="h"></li>
+                            <li>Wallets</li>
+                            <li>Belts</li>
+                            <li>Perfumes & Body Mists</li>
+                            <li>Trimmers</li>
+                            <li>Deodrants</li>
+                            <li>Ties,Cufflinks & PocketSquares</li>
+                            <li>Accessory Gift Sets</li>
+                            <li>Caps & Hats</li>
+                            <li>Mufflers,Scarves & Gloves</li>
+                            <li>Phone Cases</li>
+                            <li>Rings & Wristwear</li>
+                            <li>Helmets</li>
+                            <li><hr></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="">WOMEN</a></li>
+            <li><a href="">KIDS</a></li>
+            <li><a href="">HOME&LIVING</a></li>
+            <li><a href="">BEAUTY</a></li>
+            <li><a href="">STUDIO</a></li>
+        </ul>
+    </div>
+</body>
+</html>

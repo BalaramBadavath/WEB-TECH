@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-color: chocolate;
+            color: chartreuse;
+        }
+        :not(p){
+            /* background-color: chartreuse; */
+            color: blue;
+        }
+        input:required{
+            color: red;
+            background-color: chartreuse;
+        }
+        input:optional{
+            background-color: darkgoldenrod;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>WELCOME TO NOT</h1>
+        <p>WELCOME TO PARA</p>
+        <h1>WELCOME TO NOT</h1>
+        <em>WELCOME.....</em>
+        <p>WELCOME TO PARA</p>
+        <h1>WELCOME TO NOT</h1>
+        <em>WELCOME.....</em>
+        <p>WELCOME TO PARA</p>
+    </div>
+    NAME: <input type="text" required>
+    <br>
+    PHONE NO: <input type="text" >
+    <br>
+    EMAIL ID: <input type="text" required>
+    <br>
+    ADDRESS: <input type="text" >
+    <br>
+    PERMANENT ADD: <input type="text" required>
+</body>
+</html>

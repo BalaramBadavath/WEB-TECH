@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: "header1 header2 header3 header4 header5"
+            "header1 sec1 header3 sec2 header4 "
+            "footer1 footer1 footer2 footer2 footer2";
+            
+        }
+        #a{
+            background-color: red;
+            grid-area: header1;
+        }
+        #b{
+            background-color: red;
+            grid-area: header2;
+        }
+        #c{
+            background-color: red;
+            grid-area: header3;
+        }
+        #d{
+            background-color: red;
+            grid-area: header4;
+        }
+        #e{
+            background-color: red;
+            grid-area: header5;
+        }
+        #sec1{
+            background-color: red;
+            grid-area: sec1;
+        }
+        #sec2{
+            background-color: red;
+            grid-area: sec2;
+        }
+        #footer1{
+            background-color: red;
+            grid-area: footer1;
+        }
+        #footer2{
+            background-color: red;
+            grid-area: footer2;
+        }
+        .common{
+            height: 500px;
+            width: 500px;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header id="a" class="common">Problem</header>
+    <header id="b" class="common">Solution</header>
+    <header id="c" class="common">Unique Selling Propostion</header>
+    <header id="d" class="common">Unfair Advantage</header>
+    <header id="e" class="common">Customer Segments</header>
+    <section1 id="sec1" class="common">Key Matrics</section1>
+    <section2 id="sec2" class="common">Channels</section2>
+    <footer id="footer1" class="common">Cost Structure</footer>
+    <footer id="footer2" class="common">Revenue Streams</footer>
+</body>
+</html>

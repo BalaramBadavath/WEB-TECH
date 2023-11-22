@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 400px;
+            height: 400px;
+            /* background-color: aqua; */
+            border-radius: 30%;
+            position: relative;
+            background-image: linear-gradient(to top right,aqua 10%,orange 20%,blue 30%,red 40%,yellow 50%,deeppink 60%);
+            background-repeat: no-repeat;
+        }
+        .child1{
+            width: 300px;
+            height: 300px;
+            /* background-color: brown; */
+            border-radius: 30%;
+            position: absolute;
+            top: 40px;
+            left: 35px;
+            border: 15px solid white;
+        }
+        .child2{
+            width: 140px;
+            height: 140px;
+            /* background-color: brown; */
+            border-radius: 50%;
+            position: absolute;
+            top: 65px;
+            left: 55px;
+            border: 15px solid white;
+        }
+        .child3{
+            width: 45px;
+            height: 45px;
+            background-color: white;
+            border-radius: 100px;
+            position: absolute;
+            top: 20px;
+            left: 220px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">
+            <div class="child2"></div>
+            <div class="child3"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

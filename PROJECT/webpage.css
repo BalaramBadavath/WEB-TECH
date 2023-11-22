@@ -1,0 +1,33 @@
+body{
+    margin: 0em;
+    background-color: rgba(36, 36, 36, 0.585)
+}
+.parent {
+    height: 5rem;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.nav{
+    height: 5rem;
+    width: 88%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    
+}
+.subnav1{
+    height: 5rem;
+    width: 18%;
+    background-color:  burlywood;
+}
+.subnav{
+    height: 5em;
+    width: 17%;
+    background-color:  brown;
+}
+.parent1{
+    height: 5rem;
+}

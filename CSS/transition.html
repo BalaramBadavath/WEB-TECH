@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 800px;
+        }
+        .div1{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+        }
+        .div1:hover{
+            background-color: orange;
+            border-radius: 50%;
+            box-shadow: 5px 5px 5px black;
+            transition-property: background-color,box-shadow,border-radius;
+            transition-duration: 20s 15s 10s;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+            opacity: 0;
+            
+        }
+        img:hover{
+            opacity: 1;
+            border-radius: 50%;
+            transition-property: opacity,border-radius;
+            transition-duration: 20s 10s;
+            transition-delay: 3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <img src="" alt="">
+        </div>
+</body>
+</html>

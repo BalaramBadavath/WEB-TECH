@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Rest Parameters:
+        // function f(...rest)
+        // {
+        //     console.log(...rest)
+        // }
+        // f([10,20,30])
+
+        function abc(...rest)
+        {
+            console.log(rest)
+            let sum=0;
+            for(i=0;i<=rest.lenght-1;i++)
+            {
+                console.log(rest[i])
+                sum+=rest
+            }
+            console.log(sum)
+        }
+        abc(1,2,3,4,5,6,7)
+    </script>
+</body>
+</html>

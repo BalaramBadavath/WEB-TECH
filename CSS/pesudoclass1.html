@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1:first-child{
+            color: blueviolet;
+        }
+        h1:last-child{
+            color: red;
+        }
+        /* p:nth-child(1){
+            color: red;
+            background-color: aqua;
+        }
+        p:nth-child(3){
+            color:darkorange;
+            background-color:royalblue;
+        } */
+        p:nth-last-child(1){
+            color: aqua;
+        }
+        p:nth-child(even){
+            background-color: chocolate;
+            color: chartreuse;
+        }
+        /* p:nth-child(odd)
+        {
+            background-color: chartreuse;
+            color: chocolate;
+        } */
+        p:hover{
+            background-color: violet;
+        }
+        .a{
+            background-color: royalblue;
+            color: brown;
+        }
+        button{
+            padding: 20px 40px;
+            border-radius: 20px;
+        }
+        button:focus{
+            background-color: aquamarine;
+            color: yellowgreen;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>WELCOME TO PSEUDO CLASS 1</h1>
+        <h1>WELCOME TO PSEUDO CLASS 2</h1>
+        <h1>WELCOME TO PSEUDO CLASS 3</h1>
+        <h1>WELCOME TO PSEUDO CLASS 4</h1>
+    </div>
+    <div>
+        <p class="a">HAI..BOYS GOOD MORNING😍😍😍</p>
+        <p>HAI..BOYS GOOD MORNING😍😍😍</p>
+        <p class="a">HAI..BOYS GOOD MORNING😍😍😍</p>
+        <p>HAI..BOYS GOOD MORNING😍😍😍</p>
+        <button>Click</button>
+    </div>
+</body>
+</html>

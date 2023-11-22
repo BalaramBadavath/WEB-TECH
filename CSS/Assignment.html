@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Food Food | Latest Food Recipes</title>
+    <link rel="shortcut icon" href="https://www.foodfood.com/assets/images/logo/favicon.ico" type="image/x-icon">
+    <style>
+        .top{
+            width: 100%;
+            height: 80px;
+            background-color: brown;
+        }
+        .nav{
+            width: 100%;
+            height: 40px;
+            background-color:white;
+            position: sticky;
+            top: 0px;
+        }
+        .nav1{
+             padding: 8px;
+        }
+        .backgroundimg{
+            width: 100%;
+            height: 350px;
+        }
+        .category{
+            width: 100%;
+            height: 200px;
+            background-color: aqua;
+        }
+        .subimg{
+            margin-top: 15px;
+            height: 120px;
+            text-align: center;
+        }
+        .subimg:hover{
+            margin: 10px;
+        }
+        .subcategory1{
+                width: 25%;
+                height: 200px;
+                float: left;
+                background-color: rgb(80, 200, 248);
+        }
+        .subcategory2{
+                width: 25%;
+                height: 200px;
+                float: left;
+                background-color: rgb(125, 197, 58);
+        }
+        .subcategory3{
+                width: 25%;
+                height: 200px;
+                float: left;
+                background-color: rgb(246, 158, 17);
+        }
+        .subcategory4{
+                width: 25%;
+                height: 200px;
+                float: left;
+                background-color: rgb(117, 8, 8);
+        }
+        .name{
+            margin-left: 125px;
+            text-align: center;
+            font-size: 30px;
+            color: aliceblue;
+        }
+        .recipe{
+            width: 50%;
+            height:50px;
+            background-color:white;
+            margin-left: 70px;
+        }
+        .recipes{
+            width: 100%;
+            height:50px;
+            background-color:white;
+            margin-left: 70px;
+           
+        }
+        .subrecipes{
+            word-spacing:2px ;
+            margin-left: 15px;
+            border: 0px;
+            font-size: 15px;
+            
+        }
+        .subrecipes:hover{
+            background-color: brown;
+            color: aliceblue;
+        }
+        .recipe1{
+            width: 30%;
+            height: 300px;
+            float: left;
+            margin-left: 70px;
+           
+        }
+        .recipe2{
+            width: 30%;
+            height: 300px;
+            float: left;
+            margin-left: 10px;
+        }
+        .empty{
+            width: 100%;
+            height: 350px;
+            background-color: white;
+        }
+        .show{
+            width: 100%;
+            height: 50px;
+            background-color:white;
+        }
+        .show1:hover{
+            color:white;
+            background-color: brown;
+        }
+        .container{
+            width: 100%;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+          <img style="height: 60px;width: 100px;margin: 20px 30px;" src="https://www.foodfood.com/assets/images/logo/logo.png" alt="">
+    </div>
+    <div style="height: 5px;width: 100%;">
+    </div>
+    <div class="nav">
+        <table class="nav1">
+            <th><button style="border: 0px;background-color:white;">HOME</button></th>
+            <th><select name="" id="" style="width: 70px;border: 0px;">
+                <option value="CHEFS">CHEFS</option>
+                <option value="MASTERCHEF SANJEEV KAPOOR">MASTERCHEF SANJEEV KAPOOR</option>
+                <option value="CHEF HAPRAL SINGH">CHEF HARPAL SINGH</option>
+                <option value="CHEF AMIRITHA RAICHAND">CHEF AMIRITA RAICHAND</option>
+                <option value="CHEF SANJAY GUPTA">CHEF SANJAY GUPTA</option>
+                <option value="CHEF ANUPA DAS">CHEF ANUPA DAS</option>
+            </select></th>
+            <th>
+                <select name="" id="" style="width: 80px;border: 0px;">
+                    <option value="SHOWS">SHOWS</option>
+                    <option value="SANJEEV KAPOOR'S KITCHEN">SANJEEV KAPOOR'S KITCHEN</option>
+                    <option value="COOK SMART">COOK SMART</option>
+                    <option value="TURBAN TADAKA">TURBAN TADKA</option>
+                    <option value="TEA TIME">TEA TIME</option>
+                    <option value="STYLE CHEF">STYLE CHEF</option>
+                    <option value="HI TEA">HI TEA</option>
+                    <option value="MUMMY KA MAGIC">MUMMY KA MAGIC</option>
+                    <option value="FLAB Q">FLAB Q</option>
+                    <option value="PURE SIN">PURE SIN</option>
+                    <option value="K FOR KIDS">K FOR KIDS</option>
+                </select>
+            </th>
+            <th>
+                <select name="" id="" style="width: 80px;border: 0px;">
+                    <option value="RECIPES">RECIPES</option>
+                    <option value="">COURSE</option>
+                    <option value="">CUSINE</option>
+                    <option value="">OCCASION</option>
+                    <option value="">INGREDIENTS</option>
+                    <option value="">MEAL TYPE</option>
+                    <option value="">DIET</option>
+                    <option value="">SHOW</option>
+                </select>
+            </th>
+            <th>
+                <select name="" id="" style="width: 80px;border: 0px;">
+                        <option value="VIDEOS">VIDEOS</option>
+                        <option value="">COURSE</option>
+                        <option value="">CUSINE</option>
+                        <option value="">OCCASION</option>
+                        <option value="">INGREDIENTS</option>
+                        <option value="">MEAL TYPE</option>
+                        <option value="">DIET</option>
+                        <option value="">SHOW</option>
+                        <option value="">SEASON</option>
+                </select>
+            </th>
+            <th><button style="border: 0px;background-color: white;">BLOG</button></th>
+            <th><button style="border: 0px;background-color: white;">ABOUT US</button></th>
+            <th><button style="border: 0px;background-color: white;">CONTACT US</button></th>
+            <th><button style="border: 0px;background-color: white;">SIGN IN</button></th>
+        </table>
+    </div>
+    <div style="height: 5px;width: 100%;"></div>
+    <div class="backgroundimg">
+        <img style="height: 450px;width: 100%;" src="https://fdstatic.foodfood.com/odd/images/sKZmoVFoodFood-Chefs-mob.jpg" alt="">
+    </div>
+    <div style="height: 100px;width: 100%;"></div>
+    <div class="category">
+        <div class="subcategory1"><center><img class="subimg" src="https://www.foodfood.com/assets/images/cuisine.png" alt="cuisine"></center><i class="name">Cuisine</i></div>
+        <div class="subcategory2"><center><img class="subimg" src="https://www.foodfood.com/assets/images/ingredience.png" alt="ingredience"></center><i class="name">Ingredients</i></div>
+        <div class="subcategory3"><center><img class="subimg" src="https://www.foodfood.com/assets/images/meal-&-course.png" alt="Meal"></center><i class="name">Meals</i></div>
+        <div class="subcategory4"><center><img class="subimg" src="https://www.foodfood.com/assets/images/chef.png" alt="chef"></center><i class="name">Occasion</i></div>
+    </div>
+    <div style="height: 10px;width: 100%;"></div>
+    <div class="recipe">
+        <h1><span style="color: brown;font-weight: bolder;">Re</span>cipes</h1>
+    </div>
+    <div style="height: 10px;width: 100%;"></div>
+    <div class="recipes">
+        <table>
+            <tr><button class="subrecipes">Snack Recipes</button></tr>
+            <tr><button class="subrecipes">By Sanjeev Kapoor</button></tr>
+            <tr><button class="subrecipes">Mummy Ka Magic</button></tr>
+            <tr><button class="subrecipes">Healthy Recipes</button></tr>
+        </table>
+    </div>
+    <div style="height: 10px;width: 100%;"></div>
+    <div class="recipe1">
+        <div class="rc1"><img style="height: 200px;width: 100%;" src="https://fdstatic.foodfood.com/odd/images/Pineapple-Muffins.jpg" alt=""></div>
+        <div class="rc1"><h2 style="font-size: medium; text-align:left;font-weight: bolder;">Pineapple Muffins</h2>
+            <p>Pineapple flavoured muffins- yummy yummy</p></div>
+    </div>
+    <div class="recipe2"> 
+        <div class="rc2"><img style="height: 200px;width: 100%;" src="https://www.foodfood.com/images/recipe/lyt2komvlSrkWq0yBiryani.jpg" alt=""></div>
+        <div class="rc2"><h3 style="font-size: medium;">Chicken Dum Biryani</h3>
+        <p>The rich and intense flavours of a Biryani is what draws most people to it besides the tempting 
+            appearance and the appetising aroma of the splendid spices used</p></div>
+    </div>
+    <div style="height: 10px;width: 100%;"></div>
+
+    <div class="empty"></div>
+    <div class="show"><center><button class="show1" style="border: 0px;">SHOW ALL</button></center></div>
+    <div class="container">
+        <background-img>
+        <img style="height: 200px;width: 100%;" src="https://www.foodfood.com/assets/images/reservation-bg.jpg" alt="">
+        </background-img>
+    </div>
+    <div class="side">
+        <div>
+            <img src="" alt="">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EXAM(HTML)</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .parent{
+            height: 450px;
+            width: 400px;
+            /* background-color: aqua; */
+            border-radius: 20px;
+            margin-left: 100px;
+            border: 5px dotted red;
+            background-image: linear-gradient(to top left,orange 20%,blue,violet 60%);
+            /* display: flex;
+            flex-direction: column; */
+        }
+        .child{
+            height: 380px;
+            width: 380px;
+            border-radius: 200px;
+            background-color: grey;
+            position: relative;
+            right: 100px;
+            bottom: 10px;
+        }
+        .child1{
+            position: relative;
+            bottom: 380px;
+            left: 220px;
+            border: 2px solid black;
+            font-size: 20px;
+            background-color: white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 30px;
+            padding-left: 30px;
+            border-radius: 20px;
+        }
+        .subchild{
+            width: 300px;
+            height: 300px;
+            text-align: left;
+            position: relative;
+            left: 100px;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div><h1 style="color: red;"><center><em>STUDENT FORM</em></center></h1></div>
+        <div class="child">
+            <div class="subchild">
+                <p style="margin: 0px;">NAME</p>
+                <input style="margin: 0px;" type="text">
+                <p style="margin: 0px;">PHONE NO</p>
+                <input style="margin: 0px;" type="text">
+                <p style="margin: 0px;">PASSWORD</p>
+                <input style="margin: 0px;" type="text">
+                <p style="margin: 0px;">CONFORM PASSWORD</p>
+                <input type="text"><br>
+                <button style="margin: 50px;background-color: white;padding: 15px;border-radius: 20px;">SUBMIT</button>
+            </div>
+        </div>
+        <div><button class="child1">SUBSCRIBE</button></div>
+    </div>
+</body>
+</html>

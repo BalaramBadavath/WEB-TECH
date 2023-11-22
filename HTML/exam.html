@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="./../Images/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body><center>
+    <h2>Student Application Form For HTML</h2>
+    <form action="">
+    <table style="width: 400px;height: 1000px;border: 2px black dotted;background-color: aqua;">
+        <tr>
+            <td>First Name</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="text" pattern="[a-zA-Z]{3-50}" title="Enter First Your Name" required></td>
+            <td colspan="2">(Max 50 Characters Allowed)</td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="text" pattern="[a-zA-Z]{3-50}" title="Enter Last Your Name" required></td>
+            <td colspan="2">(Max 50 Characters Allowed)</td>
+        </tr>
+        <tr>
+            <td>Email ID</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="text" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="Enter Valid Email "
+                required></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Mobile Number</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="text" pattern="[9]{1}[6-9]{0-9}" title="Enter 10 digit" required></td>
+            <td>(10 Digits Allowed)</td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="radio" name="gen">Male
+            <input type="radio" name="gen">Female</td>
+        </tr>
+        <tr>
+            <td>Date of Birth(DOB)</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="search" list="day" placeholder="Day">
+                <datalist id="day">
+                <option value="Monday">Monday</option>
+                <option value="Tueday">Tueday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                </datalist>
+           </td>
+           <td>
+            <input  type="search" list="month" placeholder="Month">
+            <datalist id="month">
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="Mar">Mar</option>
+                <option value="Apr">Apr</option>
+                <option value="May">May</option>
+                <option value="Jun">Jun</option>
+                <option value="Jul">Jul</option>
+                <option value="Aug">Aug</option>
+                <option value="Sep">Sep</option>
+                <option value="Oct">Oct</option>
+                <option value="Nov">Nov</option>
+                <option value="Dec">Dec</option>
+
+            </datalist>
+           </td>
+           <td><input type="search" list="year" placeholder="Year">
+            <datalist id="year">
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+            </datalist>
+        </td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td colspan="2"><textarea name="" id="" cols="40" rows="10"></textarea></td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="text" pattern="[a-zA-Z]{3-50}" title="Enter City Name" required></td>
+            <td colspan="2">(Max 50 Characters Allowed)</td>
+        </tr>
+        <tr>
+            <td>Pin Code</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="text" pattern="[1]{5}[5]{0-9}" title="Enter Pincode" required></td>
+            <td colspan="2">(Max 6 Numbers Allowed)</td>
+        </tr>
+        <tr>
+            <td>State</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="search" list="city" placeholder="Select Your City" required>
+            <datalist id="city">
+                <option value="LADAKH">LADAHK</option>
+             <option value="JAMMU&KASHMIR">JAMMU&KASHMIR</option>
+             <option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option>
+             <option value="UTTARAKHAND">UTTARAKHAND</option>
+             <option value="PUNJAB">PUNJAB</option>
+             <option value="HARYANA">HARYANA</option>
+             <option value="RAJASTHAN">RAJASTHAN</option>
+             <option value="UTTAR PRADESH">UTTAR PRADESH</option>
+        <option value="MADHYA PRADESH">MADHYA PRADESH</option>
+        <option value="GUJARAT">GUJARAT</option>
+        <option value="MAHARASHTRA">MAHARASHTRA</option>
+        <option value="GOA">GOA</option>
+        <option value="KARNATAKA">KARNATAKA</option>
+        <option value="KERALA">KERALA</option>
+        <option value="TAMIL NADU">TAMIL NADU</option>
+        <option value="ANDRA PRADESH">ANDRA PRADESH</option>
+        <option value="TELANGANA">TELANGANA</option>
+        <option value="CHHATTISGARH">CHHATTISGARH</option>
+        <option value="ODISHA">ODISHA</option>
+        <option value="JHARKHAND">JHARKHAND</option>
+        <option value="BIHAR">BIHAR</option>
+        <option value="WEST BENGAL">WEST BENGAL</option>
+        <option value="SIKKIM">SIKKIM</option>
+        <option value="ASSAM">ASSAM</option>
+        <option value="MEGHALAYA">MEGHALAYA</option>
+        <option value="TRIPURA">TRIPURA</option>
+        <option value="MIZORAM">MIZORAM</option>
+        <option value="NAGALAND">NAGALAND</option>
+        <option value="ARUNACHAL PRADESH">ARUNACHAL PRADESH</option>
+            </datalist>
+            </td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="text"  pattern="[a-zA-Z]{3-50}" title="Enter Country Name" required></td>
+        </tr>
+        <tr >
+            <td rowspan="2">Hobbies</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="checkbox">Drawing
+            <input type="checkbox">Singing</td>
+            <td><input type="checkbox" >Dancing
+            <input type="checkbox">Sketching</td>
+           
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="3"><input type="checkbox" name="list" id="">Others
+                <input type="text" name="list" id="" pattern="[a-zA-Z]{5-50}">(Max 50 Characters Allowed)</td>
+        </tr>
+        <tr>
+            <td>Qualification</td>
+            <td></td>
+            <td colspan="2">
+                <input type="checkbox" name="" id="">High School(10th) <br>
+                <input type="checkbox" name="" id="">Higher School(12th) <br>
+                <input type="checkbox" name="" id="">Graduation(Bachelors) <br>
+                <input type="checkbox" name="" id="">Post Graduation(Masters) <br>
+                <input type="checkbox" name="" id="">Phd
+            </td>
+        </tr>
+        <tr>
+            <td>Courses Applied For</td>
+            <td></td>
+            <td colspan="2">
+                <input type="radio" name="" id="">BCA(Bachelors of Computer Applications) <br>
+                <input type="radio" name="" id="">B.Com(Bachelors of Commerce) <br>
+                <input type="radio" name="" id="">B.SC(Bachelors of Science) <br>
+                <input type="radio" name="" id="">BA(Bachelors of Arts) <br>
+                <input type="radio" name="" id="">MCA(Masters of Computer Applications) <br>
+                <input type="radio" name="" id="">M.Com(Masters of Commerce) <br>
+                <input type="radio" name="" id="">M.SC(Masterss of Science) <br>
+                <input type="radio" name="" id="">MA(Masters of Arts) <br>
+            </td>
+        <tr>
+            <td></td>
+            <td></td>
+            <td ><input type="submit" value="Submit"></td>
+            <td colspan="2"><input type="reset" value="Reset"></td>
+        </tr>
+    </table>
+   
+</form>
+</center>
+</body>
+</html>

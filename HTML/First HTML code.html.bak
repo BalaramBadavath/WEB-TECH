@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+      <head>
+         <title> My First Web Page </title>
+	       <meta name="description" content="Page Description Here" />
+	       <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+	       <meta name="viewport" content="width=device-width, intial-scale=1"/>
+	  
+	     <style type="text/css">
+	           Body{
+		            color: red;
+		           }  
+	     </style>
+
+	     <script>
+	          function myFunction(){
+		         var x = document.getElementById{"fname"};
+				 x.value = x.value.toUpperCase();
+		         }
+	  
+	     </script>
+	  
+     </head>
+	 
+
+      <body>
+          <p> This is a sample HTML document.</p>
+           This Javascript function will capitalize myname:
+         <p>Enter your name: <input type="text" id="fname" onchange="myFunction()"></p>
+		 
+		 <p> This is Line 1.<br> This is Line 2. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     This is Line 3.</p>
+      <h1> Header 1 </h1>
+      <h2> Header 2 </h2>
+      <h3> Header 3 </h3>
+      <h4> <font face="arial" size="22" color="blue"> Header 4 </font> </h4>
+      
+      <p> <strong> Bold Text </strong> <br>
+          <em> Italic Text </em> <br>
+		  <u> Underline Text </u> <br>
+		  <strike> Strike Text</strike>
+		   
+</p>
+<h3> My Fav Sports </h3>
+
+<ul>
+   <li> Cricket </li>
+   <li> Kabbadi </li>
+   <li> Vollyball </li>
+
+</ul>
+
+<h3>My Locations </h3>
+
+<ol>
+    <li> Hyderabad,Telangana </li>
+	<li>Noida, Delhi</li>
+	<li> Varanashi,Maharastra</li>
+</ol>
+
+<h1> My Photo </h1>
+
+<p>
+    <a href="https://www.google.com"><img src="C:\Users\badav\OneDrive\Documents\BalaramPhoto.jpg" width="300" height="250"></a>
+	<a href="https://www.brave.com"><img src="C:\Users\badav\Downloads\BalaramProfile.png" width="250" height="250"></a>
+    <a href="https://www.miami.com"><img src="https://cdn.pixabay.com/photo/2018/01/30/22/50/forest-3119826__340.jpg" width="340" height="250"></a>
+</p>
+
+<p>
+<a href="https://www.google.com" target="_blank">Balaram</a><br>
+
+</p>
+
+     </body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS EXAM</title>
+    <style>
+        body{
+            background-image: url(https://images.unsplash.com/photo-1547626740-02cb6aed9ef8?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fHw%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 800px;
+        }
+        .parent{
+            height: 80px;
+            width: 100%;
+            /* background-color: wheat; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+        }
+        h1:hover{
+            font-size: 40px;
+            color: chartreuse;
+        }
+        a{
+            margin-left: 50px;
+            text-decoration: none;
+            color: white;
+            
+        }
+        a:hover{
+            text-decoration: underline;
+            font-size: 20px;
+            color: aqua;
+        }
+        .parent1{
+            display: flex;
+            margin-left: 500px;
+            flex-direction: column;
+            height: 500px;border-radius: 30px;
+            width: 25%;
+            border: 3px solid white;
+            backdrop-filter: blur(10px);
+            /* justify-content: center; */
+            align-items: center;
+            box-shadow: 3px 3px 3px;
+
+        }
+        .child1{
+            display: flex;
+            justify-content: center;
+            height: 100px;
+            width: 100%;
+            border-radius: 25px;
+            /* background-color: white; */
+        }
+        #h{
+            color: white;
+            font-size: 30px;
+        }
+        #h:hover{
+            font-size: 35px;
+            color: purple;
+        }
+        .parent2{
+            height: 300px;
+            width: 100%;
+            /* background-color: aqua; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .child{
+            height: 40px;
+            width: 80%;
+            margin-top: 20px;
+            /* background-color:yellowgreen; */
+           text-decoration: underline;
+        }
+        button{
+            border: 1px solid burlywood;background: transparent;color: white;border-radius: 30px;padding: 5px 20px;
+        }
+        button:hover{
+            font-size: 20px;
+            color: violet;
+        }
+        .subchild1::placeholder{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h1 >LOGO</h1>
+            <nav>
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">SERVICE</a>
+                <a href="#">CONTACT</a>
+            </nav>
+    </div>
+    <div class="parent1">
+        <div class="child1">
+            <h1 id="h">LOGIN</h1>
+        </div>
+        <div class="parent2">
+            <div class="child">
+                <div class="subchild1"><input style="border: 0px;background-color: transparent;padding:12px 80px;padding-left: 0px;"  placeholder="User Name"> </div>
+                <div class="subchild2"><img src="" alt=""></div>
+            </div>
+           <div class="child">
+                <div class="subchild1"><input style="border: 0px;background-color: transparent;padding:12px 80px;padding-left: 0px;"  placeholder="Phone Number"> </div>
+                <div class="subchild2"><img src="" alt=""></div>
+           </div>
+           <div class="child">
+                <div class="subchild1"><input style="border: 0px;background-color: transparent;padding:12px 80px;padding-left: 0px;"  placeholder="Email"> </div>
+                <div class="subchild2"><img src="" alt=""></div>
+           </div>
+           <div class="child">
+                 <div class="subchild1"><input style="border: 0px;background-color: transparent;padding:12px 80px;padding-left: 0px;"  placeholder="Password"> </div>
+                <div class="subchild2"><img src="" alt=""></div>
+           </div>
+        </div>
+        <div class="child2"><button>SUBMIT</button></div>
+    </div>
+</body>
+</html>
