@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp1" placeholder="Name">
+    <br>
+    <small id="small" ></small>
+    <br>
+    <input type="text" id="phone" placeholder="Phone no">
+    <br>
+    <small id="small1" ></small>
+    <br>
+    <input type="text" id="email" placeholder="Email">
+    <br>
+    <small id="small2"></small>
+    <br>
+    <input type="text" id="password" placeholder="Password">
+    <br>
+    <small id="small3"></small>
+    <br>
+
+    <button onclick="demo()">Submit</button>
+    <script>
+        function demo(){
+            let input_1 = document.getElementById("inp1").value;
+            console.log(inp1)
+            let input = document.getElementById("inp1")
+            let small = document.getElementById("small")
+            let reg1=/^[a-zA-Z]{3,15}$/
+            if (input_1==""){
+                input.style.border=`3px solid red`
+                small.innerHTML=`Please Don't Leave Empty`
+                small.style.color=`red`
+                small.style.visibility="visible"
+            }
+            // reg1.test(inp1)
+            else if(input_1.match(reg1)){
+                input.style.border=`3px solid green`
+                small.style.visibility="hidden"
+            }
+            else{
+                input.style.border=`3px solid red`
+                small.innerHTML=`Invalid Name`
+                small.style.color=`red`
+                small.style.visibility="visible"
+            }
+            let phone = document.getElementById("phone").value;
+            console.log(phone);
+            let input1 = document.getElementById("phone");
+            let s1 = document.getElementById("small1");
+            let reg2=/^[6-9]{1}[0-9]{9}$/
+            if (phone==""){
+                input1.style.border='3px solid red'
+                s1.innerHTML=`Please don't leave empty`
+                s1.style.color='red'
+                s1.style.visibility='visible'
+            }
+            else if(phone.match(reg2)){
+                input1.style.border='3px solid green'
+                s1.style.visibility='hidden'                
+            }
+            else{
+                input1.style.border=`3px solid red`
+                s1.innerHTML=`Invalid Phone No`
+                s1.style.color=`red`
+                s1.style.visibility="visible"
+            }
+            let email=document.getElementById('email').value;
+            console.log(email)
+            let input2=document.getElementById("email")
+            let s2=document.getElementById("small2")
+            let reg3=/^[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$/
+            if (email=="") {
+                input2.style.border='3px solid red'
+                s2.innerHTML=`Please don't leave empty`
+                s2.style.color='red'
+                s2.style.visibility='visible'
+            }
+            else if(email.match(reg3)) {
+                input2.style.border='3px solid green'
+                s2.style.visibility='hidden'
+            }
+            else{
+                input2.style.border=`3px solid red`
+                s2.innerHTML=`Invalid Email Id`
+                s2.style.color='red'
+                s2.style.visibility='visible'
+            }
+            let psw=document.getElementById('password').value
+            console.log(password)
+            let input3=document.getElementById('password')
+            let s3=document.getElementById('small3')
+            let reg4=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/
+            if (psw=="") {
+                input3.style.border='3px solid red'
+                s3.innerHTML=`Please don't leave empty`
+                s3.style.color='red'
+                s3.style.visibility='visible'
+            }
+            else if(psw.match(reg4)) {
+                input3.style.border='3px solid green'
+                s3.style.visibility='hidden'
+            }
+            else{
+                input3.style.border=`3px solid red`
+                s3.innerHTML=`Password should contain at least 8 characters including one uppercase letter and one lowercase letter.`
+                s3.innerHTML=`Password should contain atleast 8 characters and a mix of uppercase , lowercase letters and numbers.`
+                s3.innerHTML=`Password should contain atleast 1 uppercase letter and 1 lowercase letter and 1 number.`
+                s3.innerHTML=`Password must be 8 characters long and should contain at least one uppercase letter,one lowercase letter and one number.`
+                s3.innerHTML=`Password should contain atleast 8 characters and a combination of uppercase letters, lowercase letters, numbers.`
+                s3.style.visibility='visible'
+            }
+        }
+        
+    </script>
+</body>
+</html>

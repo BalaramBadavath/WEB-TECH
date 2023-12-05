@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let arr=[1,2,3,4,5,6,7,8,9];
+    // Normal Logic:
+    let arr1=[]
+    for(i=0;i<=arr.length-1;i++)
+        {
+            arr1.push(arr[i]*2)
+        }
+    console.log(arr1)
+
+    //Map:
+    let num=arr.map((arg)=>
+        {
+            console.log(arg)
+            return arg*2;
+        })
+    console.log(num)
+
+    //For Each():
+    let arr2=[];
+    arr.forEach((arg)=>
+        {
+            console.log(arg)
+            return arg*2; 
+            arr2.push(arg*2)
+        })
+    console.log(arr2)
+    let num1=num.map((arg)=>
+        {
+            console.log(arg)
+            return arg+2;
+        })
+    console.log(num1)
+
+    //For Each():
+    let arr3=[]
+    arr2.forEach((arg)=>
+        {
+            console.log(arg)
+            arr3.push(arg+2)
+        })
+    console.log(arr3)
+
+    //Normal Logic:
+    let ar=[1,2,3,4,5,6,7,8,9];
+    let ar1=[];
+    for(i=0;i<=ar.length-1;i++)
+    {
+        if (ar[i]>2)
+        {
+            ar1.push(ar[i])
+        }
+    }
+    console.log(ar1)
+
+    //Filter Logic:
+    let a=ar.filter((arg)=>{
+        console.log(arg)
+        if(arg>2)
+        {
+            return arg
+        }
+    })
+    console.log(a)
+    let nu=ar.filter((cum)=>{
+        if (cum%2==0)
+        {
+            return(cum)
+        }
+    })
+    console.log(nu)
+
+    //Reduce Logic:
+    let a1=nu.reduce((acc,cum)=>{
+        return acc+cum;
+    },5)
+    console.log(a)
+
+
+    //Some Logic:
+    let a2=arr.some((arg)=>{
+        console.log(arg);
+        if (arg>=9)
+        {
+            return arg;
+        }
+    })
+    console.log(a2)
+
+    //Every Logic:
+    let a4=ar.every((arg)=>{
+        console.log(arg)
+        if (arg>1)
+        {
+            return arg;
+        }
+    })
+    console.log(a4)
+</script>
+</body>
+</html>

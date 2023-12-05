@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp1" oninput="demo()">
+    <br>
+    <button onclick="demo()">Submit</button>
+
+    <script>
+        function demo(){
+            let a=document.getElementById("inp1").value;
+            let b=a.length
+            if(b%2==0)
+            {
+                document.body.style.backgroundColor="green"
+            }
+            else{
+                document.body.style.backgroundColor="orange"
+            }
+        }
+        function demo1()
+        {
+            let a=document.getElementById("inp1").value;
+            let b=a.length
+            if(b%2==0)
+            {
+                open(`hhtps://www.facebook.com`)
+            }
+            else
+            {
+                open(`https://ww.instagram.com`)
+            }
+        }
+    </script>
+</body>
+</html>
